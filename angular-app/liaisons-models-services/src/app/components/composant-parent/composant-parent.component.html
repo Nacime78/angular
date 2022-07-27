@@ -1,0 +1,5 @@
+<div class="border-blue">
+    <p>composant-parent works!</p>
+    <p>Donnée cliquée dans l'enfant et reçu par le parent {{ clickedData }}</p>
+    <app-composant-enfant [dataDeParent]="data" (eventGenerated)="receptionEvenement($event)"></app-composant-enfant>
+</div>

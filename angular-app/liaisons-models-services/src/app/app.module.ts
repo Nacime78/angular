@@ -12,6 +12,12 @@ import { AppRoutingModule } from './app-routing.module';
 import * as fr from '@angular/common/locales/fr';
 import { registerLocaleData } from '@angular/common';
 import { UcfirstPipe } from './pipes/ucfirst.pipe';
+import { PremierComposantBasiqueComponent } from './components/premier-composant-basique/premier-composant-basique.component';
+import { LiaisonUnidirectionnelleComponent } from './components/liaison-unidirectionnelle/liaison-unidirectionnelle.component';
+import { LiaisonBidirectionnelleComponent } from './components/liaison-bidirectionnelle/liaison-bidirectionnelle.component';
+import { FormsModule } from '@angular/forms';
+import { ComposantEnfantComponent } from './components/composant-enfant/composant-enfant.component';
+import { ComposantParentComponent } from './components/composant-parent/composant-parent.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +27,16 @@ import { UcfirstPipe } from './pipes/ucfirst.pipe';
     ContactComponent,
     NotFoundComponent,
     UcfirstPipe,
+    PremierComposantBasiqueComponent,
+    LiaisonUnidirectionnelleComponent,
+    LiaisonBidirectionnelleComponent,
+    ComposantEnfantComponent,
+    ComposantParentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     // provider de la locale:
